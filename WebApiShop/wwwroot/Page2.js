@@ -1,0 +1,50 @@
+﻿const welcome = document.querySelector(".welcome")
+const currentUser = JSON.parse(sessionStorage.getItem('user'));
+welcome.textContent = `welcome back ${currentUser.FName}`;
+
+async function updateUser() {
+    try {
+        const Email = document.querySelector("#Email").value;
+        const FName = document.querySelector("#FirstName").value;
+        const LName = document.querySelector("#LastName").value;
+        const Password = document.querySelector("#password").value;
+
+        let currentUser = JSON.parse(sessionStorage.getItem('user'));
+        if (!currentUser) {
+            alert("No current user in sessionStorage");
+            return;
+        }
+
+        const Id = currentUser.id;
+        const data = { Email, FName, LName, Password: Password, Id };
+
+
+        console.log("PUT body:", JSON.stringify(data));
+
+        const response = await fetch(`api/Users/${Id}`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+        },
+            body: JSON.stringify(data)
+    });
+
+    if (response.ok) {
+        currentUser.Email = Email;
+        currentUser.FirstName = FirstName;
+        currentUser.LastName = LastName;
+        currentUser.Password = password;
+        sessionStorage.setItem('user', JSON.stringify(currentUser));
+        alert("success");
+    }
+    else {
+        const update = await response.text();
+        console.error('API error:', response.status, update);
+        alert("Update failed: " + response.status);
+    }
+}
+    catch (e) {
+        console.error(e);
+        alert(e);
+    }
+}

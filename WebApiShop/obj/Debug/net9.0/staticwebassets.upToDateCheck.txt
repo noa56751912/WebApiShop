@@ -1,0 +1,10 @@
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\wwwroot\Page2.js
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\wwwroot\home.html
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\wwwroot\Page2.html
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\wwwroot\page1.html
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\wwwroot\page1.js
+wwwroot\home.html
+wwwroot\page1.html
+wwwroot\page1.js
+wwwroot\Page2.html
+wwwroot\Page2.js

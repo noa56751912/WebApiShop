@@ -1,0 +1,107 @@
+﻿
+async function getUserData() {
+    try {
+        const response = await fetch("api/Users");
+        if (!response.ok)
+            throw new Error("error")
+        else {
+            const data = await response.json();
+            alert(data);
+        }
+    }
+    catch (e) {
+        alert(e)
+    }
+    
+}
+
+async function login() {
+    try {
+        const Email = document.querySelector("#userName1").value;
+        const password = document.querySelector("#password1").value;
+        const data = { Email, password };
+        const response = await fetch('api/Users/Login',{
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        //if (response.status == 404) {
+            
+        //}
+        if (!response.ok) {
+            alert("New user, please register")
+            //throw Error("error")
+        }
+       
+        else {
+            const dataLogin = await response.json()
+            sessionStorage.setItem('user', JSON.stringify(dataLogin))
+            window.location.href = "Page2.html"
+        }
+    }
+    catch (e) {
+        alert(e)
+    }
+
+}
+
+
+async function Register() { 
+    try {
+        const Email = document.querySelector("#userName").value;
+        const FName = document.querySelector("#firstName").value;
+        const LName = document.querySelector("#lastName").value;
+        const Password = document.querySelector("#password").value;
+
+        const data = { Email, FName, LName, Password };
+
+        const response = await fetch('api/Users', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+
+        });
+        if (!response.ok) {
+            throw Error("run into a problem")
+        }
+        const dataRegister = await response.json();
+        alert("sucessfly sign in")
+        console.log('Post Data: ', dataRegister)
+    }
+    catch (e) {
+        alert(e)
+    }
+           
+}
+
+async function PasswordStrength() {
+    
+    try {
+        const password = document.querySelector("#password");
+        const progres = document.querySelector("#passwordScore");
+        const response = await fetch('api/Password/PasswordStrength', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(password)
+
+        });
+        if (!response.ok) {
+            throw Error("run into a problem")
+        }
+        const dataRegister = await response.json();
+        alert("sucessfly sign in")
+        console.log('Post Data: ', dataRegister)
+    }
+    catch (e) {
+        alert(e)
+    }
+
+}
+       
+

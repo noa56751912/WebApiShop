@@ -1,0 +1,165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|f:\\studies\\web api\\lesson 4 h.w\\webapishop\\webapishop\\wwwroot\\page1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|solutionrelative:webapishop\\wwwroot\\page1.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|f:\\studies\\web api\\lesson 4 h.w\\webapishop\\webapishop\\controllers\\passwordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|solutionrelative:webapishop\\controllers\\passwordcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|f:\\studies\\web api\\lesson 4 h.w\\webapishop\\webapishop\\wwwroot\\page1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|solutionrelative:webapishop\\wwwroot\\page1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|f:\\studies\\web api\\lesson 4 h.w\\webapishop\\webapishop\\wwwroot\\page2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|solutionrelative:webapishop\\wwwroot\\page2.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0FDDAFCC-238F-4ACA-A0DF-3E2C011117DE}|ServicesUser\\Services.csproj|f:\\studies\\web api\\lesson 4 h.w\\webapishop\\servicesuser\\servicepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0FDDAFCC-238F-4ACA-A0DF-3E2C011117DE}|ServicesUser\\Services.csproj|solutionrelative:servicesuser\\servicepassword.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C51F174-538F-4001-8F54-4E90091367A5}|RepositoryUser\\Repository.csproj|f:\\studies\\web api\\lesson 4 h.w\\webapishop\\repositoryuser\\repositoryuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C51F174-538F-4001-8F54-4E90091367A5}|RepositoryUser\\Repository.csproj|solutionrelative:repositoryuser\\repositoryuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{09299E9E-298F-4105-B492-B2D8DA34187B}|EntityUsers\\Entity.csproj|f:\\studies\\web api\\lesson 4 h.w\\webapishop\\entityusers\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{09299E9E-298F-4105-B492-B2D8DA34187B}|EntityUsers\\Entity.csproj|solutionrelative:entityusers\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|f:\\studies\\web api\\lesson 4 h.w\\webapishop\\webapishop\\wwwroot\\page2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|solutionrelative:webapishop\\wwwroot\\page2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|f:\\studies\\web api\\lesson 4 h.w\\webapishop\\webapishop\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}|WebApiShop\\WebApiShop.csproj|solutionrelative:webapishop\\file.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PasswordController.cs",
+              "DocumentMoniker": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\Controllers\\PasswordController.cs",
+              "RelativeDocumentMoniker": "WebApiShop\\Controllers\\PasswordController.cs",
+              "ToolTip": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\Controllers\\PasswordController.cs",
+              "RelativeToolTip": "WebApiShop\\Controllers\\PasswordController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:25:52.966Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "User.cs",
+              "DocumentMoniker": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\User.cs",
+              "RelativeDocumentMoniker": "EntityUsers\\User.cs",
+              "ToolTip": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\User.cs",
+              "RelativeToolTip": "EntityUsers\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T17:32:05.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "page1.html",
+              "DocumentMoniker": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\wwwroot\\page1.html",
+              "RelativeDocumentMoniker": "WebApiShop\\wwwroot\\page1.html",
+              "ToolTip": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\wwwroot\\page1.html",
+              "RelativeToolTip": "WebApiShop\\wwwroot\\page1.html",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADQAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-11T18:12:09.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Page2.js",
+              "DocumentMoniker": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\wwwroot\\Page2.js",
+              "RelativeDocumentMoniker": "WebApiShop\\wwwroot\\Page2.js",
+              "ToolTip": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\wwwroot\\Page2.js",
+              "RelativeToolTip": "WebApiShop\\wwwroot\\Page2.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-11T18:36:50.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Page2.html",
+              "DocumentMoniker": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\wwwroot\\Page2.html",
+              "RelativeDocumentMoniker": "WebApiShop\\wwwroot\\Page2.html",
+              "ToolTip": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\wwwroot\\Page2.html",
+              "RelativeToolTip": "WebApiShop\\wwwroot\\Page2.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-11-11T17:37:01.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "file.txt",
+              "DocumentMoniker": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\file.txt",
+              "RelativeDocumentMoniker": "WebApiShop\\file.txt",
+              "ToolTip": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\file.txt",
+              "RelativeToolTip": "WebApiShop\\file.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-11-11T17:42:39.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "page1.js",
+              "DocumentMoniker": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\wwwroot\\page1.js",
+              "RelativeDocumentMoniker": "WebApiShop\\wwwroot\\page1.js",
+              "ToolTip": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\wwwroot\\page1.js",
+              "RelativeToolTip": "WebApiShop\\wwwroot\\page1.js",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAFIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-11-11T17:37:24.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ServicePassword.cs",
+              "DocumentMoniker": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\ServicePassword.cs",
+              "RelativeDocumentMoniker": "ServicesUser\\ServicePassword.cs",
+              "ToolTip": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\ServicePassword.cs",
+              "RelativeToolTip": "ServicesUser\\ServicePassword.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T21:10:36.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "RepositoryUser.cs",
+              "DocumentMoniker": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\RepositoryUser.cs",
+              "RelativeDocumentMoniker": "RepositoryUser\\RepositoryUser.cs",
+              "ToolTip": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\RepositoryUser.cs",
+              "RelativeToolTip": "RepositoryUser\\RepositoryUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-13T17:37:09.938Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
