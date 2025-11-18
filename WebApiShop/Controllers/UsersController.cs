@@ -1,170 +1,93 @@
 ﻿
-using System.Linq;
-using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
-<<<<<<< HEAD
-using Entity;
-using Repository;
-using Services;
+using Entity; 
+using Services; 
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 namespace WebApiShop.Controllers
 {
-=======
-using System.Text.Json;
-
-
-//using System.IO;
-//using System;
-
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
-namespace WebApiShop.Controllers
-{
-    
->>>>>>> ed8913a3128f6670c339bb1fe93f875e19e64361
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class UsersController : ControllerBase, IServiceUser
     {
-        string path = "file.txt";
-<<<<<<< HEAD
-        ServiceUser service = new ServiceUser();
+        private readonly IServiceUser _IServiceUser;
+        public UsersController(IServiceUser IServiceUser) {
+            _IServiceUser = IServiceUser;
+        }
+        //ServiceUser services = new ServiceUser();
 
-        // GET: api/<UsersControllers>
-        // [HttpGet]
-        //public IEnumerable<string> Get()
-        //{
-        //    return ;
-        //}
+        //private static List<User> users = new List<User>();
 
-        // GET api/<UsersControllers>/5
+       
+        // GET api/Users/5
         [HttpGet("{id}")]
         public ActionResult<User> GetUserById(int id)
         {
-            User? user= service.GetUserById(id);
-            if (user == null) { 
-                return NotFound();
-            }
-            return Ok(user);
-=======
-
-        // GET: api/<UsersControllers>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
-
-        // GET api/<UsersControllers>/5
-        [HttpGet("{id}")]
-        public ActionResult<User> Get(int id)
-        {
-            using (StreamReader reader = System.IO.File.OpenText(path))
-            {
-                string? currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-                    User user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user.Id == id)
-                        return Ok(user);
-                }
-            }
-            return NotFound();
-
-
->>>>>>> ed8913a3128f6670c339bb1fe93f875e19e64361
-        }
-        [HttpPost("Login")]
-        public ActionResult<User> Login([FromBody] ExistingUser existingUser)
-        {
-<<<<<<< HEAD
-            User? user = service.Login(existingUser);
+            User? user = _IServiceUser.GetUserById(id);
             if (user == null)
             {
                 return NotFound();
             }
             return Ok(user);
-=======
-            using (StreamReader reader = System.IO.File.OpenText("text.txt"))
-            {
-                string? currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-                    User user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user.Email == existingUser.Email && user.Password == existingUser.Password)
-                        return Ok(user);
-                }
-            }
-            return NotFound();
->>>>>>> ed8913a3128f6670c339bb1fe93f875e19e64361
-
         }
-        // POST api/<Users>
 
-        // POST api/<UsersControllers>
+        // POST api/Users/Login
+        [HttpPost("Login")]
+        public ActionResult<User> Login([FromBody] ExistingUser existingUser)
+        {
+            User? user = _IServiceUser.Login(existingUser);
+            if (user == null)
+                return NotFound(); 
+            return Ok(user);
+        }
 
-        [HttpPost]
         
-<<<<<<< HEAD
-        public ActionResult<User> Register([FromBody] User newUser) {
+        [HttpPost]
+        public ActionResult<User> Register([FromBody] User newUser)
+        {
+            User? user = _IServiceUser.Register(newUser);
+            if (user == null)
+                return BadRequest("Password"); 
 
-            User? user = service.Register(newUser);
-            if (user == null) 
-                return NotFound();
-            return CreatedAtAction(nameof(GetUserById), new { newUser.Id }, newUser);
-=======
-        public ActionResult<User> Post([FromBody] User newUser) {
-            
-
-            //int loggedInId = sessionStorage.getItem('currentUserId');
-            int numberOfUsers = System.IO.File.ReadLines(path).Count();
-            newUser.Id= numberOfUsers+1;
-            string userJson = JsonSerializer.Serialize(newUser);
-            System.IO.File.AppendAllText(path, userJson + Environment.NewLine);
-            return CreatedAtAction(nameof(Get), new { newUser.Id }, newUser);
->>>>>>> ed8913a3128f6670c339bb1fe93f875e19e64361
+            return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
         }
 
-        // PUT api/<UsersControllers>/5
+        // PUT api/Users/5
         [HttpPut("{id}")]
-<<<<<<< HEAD
-        public void Update(int id, [FromBody] User updateUser)
+        public IActionResult Update(int id, [FromBody] User updateUser)
         {
-            service.Update(id, updateUser);
-=======
-        public void Put(int id, [FromBody] User updateUser)
-        {
-            string textToReplace = string.Empty;
-            using (StreamReader reader = System.IO.File.OpenText("text.txt"))
-            {
-                string currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-                    User user= JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if(user.Id==id)
-                        textToReplace = currentUserInFile;
-                }
-            }
+           bool success= _IServiceUser.Update(id, updateUser);
+            if(!success)
+                return BadRequest("Password");
+            return Ok();
 
-            if(textToReplace != string.Empty)
-            {
-                string text = System.IO.File.ReadAllText("text.txt");
-                text = text.Replace(textToReplace, JsonSerializer.Serialize(updateUser));
-                System.IO.File.WriteAllText("text.txt", text);
-            }
->>>>>>> ed8913a3128f6670c339bb1fe93f875e19e64361
         }
 
-        // DELETE api/<UsersControllers>/5
+        // DELETE api/Users/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-<<<<<<< HEAD
-            service.Delete(id);
-=======
->>>>>>> ed8913a3128f6670c339bb1fe93f875e19e64361
+            _IServiceUser.Delete(id);
+        }
+
+        User? IServiceUser.GetUserById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        User? IServiceUser.Login(ExistingUser existingUser)
+        {
+            throw new NotImplementedException();
+        }
+
+        User? IServiceUser.Register(User newUser)
+        {
+            throw new NotImplementedException();
+        }
+
+        bool IServiceUser.Update(int id, User updateUser)
+        {
+            throw new NotImplementedException();
         }
     }
 }

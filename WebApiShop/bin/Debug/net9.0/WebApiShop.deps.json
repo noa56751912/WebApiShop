@@ -16,11 +16,11 @@
           "WebApiShop.dll": {}
         }
       },
-      "zxcvbn-core/7.0.92": {
+      "zxcvbn-core/8.0.0-beta0002": {
         "runtime": {
           "lib/netstandard2.0/zxcvbn-core.dll": {
-            "assemblyVersion": "7.0.0.0",
-            "fileVersion": "7.0.92.0"
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.0.0"
           }
         }
       },
@@ -34,7 +34,8 @@
       },
       "Repository/1.0.0": {
         "dependencies": {
-          "Entity": "1.0.0"
+          "Entity": "1.0.0",
+          "zxcvbn-core": "8.0.0-beta0002"
         },
         "runtime": {
           "Repository.dll": {
@@ -47,7 +48,7 @@
         "dependencies": {
           "Entity": "1.0.0",
           "Repository": "1.0.0",
-          "zxcvbn-core": "7.0.92"
+          "zxcvbn-core": "8.0.0-beta0002"
         },
         "runtime": {
           "Services.dll": {
@@ -64,12 +65,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "zxcvbn-core/7.0.92": {
+    "zxcvbn-core/8.0.0-beta0002": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3CKGKJe4SnFrks38EuF4iq1DT6IqsyNu/zMQp9GOpaipb7qdZndjjTXQa1/dkNh/OoxD0/aTcIBrRrbD4ALeGQ==",
-      "path": "zxcvbn-core/7.0.92",
-      "hashPath": "zxcvbn-core.7.0.92.nupkg.sha512"
+      "sha512": "sha512-3l1tIg+glhOo02hjxjyk1SMEvbrKV4K2znGMePAg05HEEEhxS8nWBxSMUz/o69+FpjsgL0G70IWgO1gKPjdQfg==",
+      "path": "zxcvbn-core/8.0.0-beta0002",
+      "hashPath": "zxcvbn-core.8.0.0-beta0002.nupkg.sha512"
     },
     "Entity/1.0.0": {
       "type": "project",

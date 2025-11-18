@@ -4,14 +4,14 @@
     "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\WebApiShop.csproj": {}
   },
   "projects": {
-    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj": {
+    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj",
+        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj",
+        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\obj\\",
+        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\Repository.csproj": {
+    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\Repository.csproj",
+        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\Repository.csproj",
+        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\obj\\",
+        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,80 +97,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.300"
-      },
-      "frameworks": {
-        "net9.0": {
-          "targetAlias": "net9.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\Services.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\Services.csproj",
-        "projectName": "Services",
-        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\Services.csproj",
-        "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\נועה\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net9.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net9.0": {
-            "targetAlias": "net9.0",
-            "projectReferences": {
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj"
-              },
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\Repository.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\Repository.csproj"
+              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj": {
+                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj"
               }
             }
           }
@@ -193,7 +121,85 @@
           "dependencies": {
             "zxcvbn-core": {
               "target": "Package",
-              "version": "[7.0.92, )"
+              "version": "[8.0.0-beta0002, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
+        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\נועה\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj": {
+                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj"
+              },
+              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj": {
+                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "zxcvbn-core": {
+              "target": "Package",
+              "version": "[8.0.0-beta0002, )"
             }
           },
           "imports": [
@@ -244,14 +250,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj"
+              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj": {
+                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj"
               },
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\Repository.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\Repository.csproj"
+              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj": {
+                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj"
               },
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\Services.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\Services.csproj"
+              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj": {
+                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj"
               }
             }
           }

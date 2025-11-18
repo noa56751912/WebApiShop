@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DH15/fuYxVc=",
+  "dgSpecHash": "kMJGWEfmWQI=",
   "success": true,
   "projectFilePath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\נועה\\.nuget\\packages\\zxcvbn-core\\7.0.92\\zxcvbn-core.7.0.92.nupkg.sha512"
+    "C:\\Users\\נועה\\.nuget\\packages\\zxcvbn-core\\8.0.0-beta0002\\zxcvbn-core.8.0.0-beta0002.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,8 @@
+# Visual Studio Solution User Options and cache
+.vs/
+*.user
+*.suo
+
+# Binaries and object files from build process
+[Bb]in/
+[Oo]bj/

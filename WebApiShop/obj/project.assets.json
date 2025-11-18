@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "zxcvbn-core/7.0.92": {
+      "zxcvbn-core/8.0.0-beta0002": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/zxcvbn-core.dll": {
@@ -29,7 +29,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
         "dependencies": {
-          "Entity": "1.0.0"
+          "Entity": "1.0.0",
+          "zxcvbn-core": "8.0.0-beta0002"
         },
         "compile": {
           "bin/placeholder/Repository.dll": {}
@@ -44,7 +45,7 @@
         "dependencies": {
           "Entity": "1.0.0",
           "Repository": "1.0.0",
-          "zxcvbn-core": "7.0.92"
+          "zxcvbn-core": "8.0.0-beta0002"
         },
         "compile": {
           "bin/placeholder/Services.dll": {}
@@ -56,38 +57,40 @@
     }
   },
   "libraries": {
-    "zxcvbn-core/7.0.92": {
-      "sha512": "3CKGKJe4SnFrks38EuF4iq1DT6IqsyNu/zMQp9GOpaipb7qdZndjjTXQa1/dkNh/OoxD0/aTcIBrRrbD4ALeGQ==",
+    "zxcvbn-core/8.0.0-beta0002": {
+      "sha512": "3l1tIg+glhOo02hjxjyk1SMEvbrKV4K2znGMePAg05HEEEhxS8nWBxSMUz/o69+FpjsgL0G70IWgO1gKPjdQfg==",
       "type": "package",
-      "path": "zxcvbn-core/7.0.92",
+      "path": "zxcvbn-core/8.0.0-beta0002",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "CHANGELOG.md",
         "LICENSE",
-        "lib/net451/zxcvbn-core.dll",
-        "lib/net451/zxcvbn-core.xml",
+        "README.md",
+        "lib/net461/zxcvbn-core.dll",
+        "lib/net461/zxcvbn-core.xml",
         "lib/netstandard1.3/zxcvbn-core.dll",
         "lib/netstandard1.3/zxcvbn-core.xml",
         "lib/netstandard2.0/zxcvbn-core.dll",
         "lib/netstandard2.0/zxcvbn-core.xml",
-        "zxcvbn-core.7.0.92.nupkg.sha512",
+        "zxcvbn-core.8.0.0-beta0002.nupkg.sha512",
         "zxcvbn-core.nuspec"
       ]
     },
     "Entity/1.0.0": {
       "type": "project",
-      "path": "../EntityUsers/Entity.csproj",
-      "msbuildProject": "../EntityUsers/Entity.csproj"
+      "path": "../Entity/Entity.csproj",
+      "msbuildProject": "../Entity/Entity.csproj"
     },
     "Repository/1.0.0": {
       "type": "project",
-      "path": "../RepositoryUser/Repository.csproj",
-      "msbuildProject": "../RepositoryUser/Repository.csproj"
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     },
     "Services/1.0.0": {
       "type": "project",
-      "path": "../ServicesUser/Services.csproj",
-      "msbuildProject": "../ServicesUser/Services.csproj"
+      "path": "../Services/Services.csproj",
+      "msbuildProject": "../Services/Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -129,14 +132,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj": {
-              "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\EntityUsers\\Entity.csproj"
+            "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj": {
+              "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj"
             },
-            "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\Repository.csproj": {
-              "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\RepositoryUser\\Repository.csproj"
+            "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj": {
+              "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj"
             },
-            "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\Services.csproj": {
-              "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\ServicesUser\\Services.csproj"
+            "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj": {
+              "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj"
             }
           }
         }

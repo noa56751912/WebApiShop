@@ -1,95 +1,3 @@
-M:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\appsettings.Development.json
-M:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\appsettings.json
-M:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.staticwebassets.endpoints.json
-M:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.exe
-M:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.deps.json
-M:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.runtimeconfig.json
-M:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.dll
-M:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.pdb
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\rpswa.dswa.cache.json
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.GeneratedMSBuildEditorConfig.editorconfig
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfoInputs.cache
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfo.cs
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.csproj.CoreCompileInputs.cache
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.MvcApplicationPartsAssemblyInfo.cache
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\rjimswa.dswa.cache.json
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\scopedcss\bundle\WebApiShop.styles.css
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json.cache
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.development.json
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.dll
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\refint\WebApiShop.dll
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.pdb
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.genruntimeconfig.cache
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\ref\WebApiShop.dll
-M:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.staticwebassets.runtime.json
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\nynb8sdqzf-c7p14rtazx.gz
-M:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\t1cr4o7721-d62721mnp4.gz
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rpswa.dswa.cache.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.GeneratedMSBuildEditorConfig.editorconfig
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfoInputs.cache
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfo.cs
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.csproj.CoreCompileInputs.cache
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.MvcApplicationPartsAssemblyInfo.cache
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.dll
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\refint\WebApiShop.dll
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.pdb
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\appsettings.Development.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\appsettings.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.staticwebassets.runtime.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.staticwebassets.endpoints.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.exe
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.deps.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.runtimeconfig.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.dll
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.pdb
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rjimswa.dswa.cache.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\scopedcss\bundle\WebApiShop.styles.css
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json.cache
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.development.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.genruntimeconfig.cache
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\ref\WebApiShop.dll
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\bin\Debug\net9.0\appsettings.Development.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\bin\Debug\net9.0\appsettings.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.staticwebassets.endpoints.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.staticwebassets.runtime.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.exe
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.deps.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.runtimeconfig.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.dll
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.pdb
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\rpswa.dswa.cache.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfoInputs.cache
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfo.cs
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.csproj.CoreCompileInputs.cache
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\rjimswa.dswa.cache.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\scopedcss\bundle\WebApiShop.styles.css
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\dsl5nreg3f-mxyx8p8iew.gz
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\nynb8sdqzf-s5mhyxfh1u.gz
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\t1cr4o7721-ogqg9uy54n.gz
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json.cache
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.development.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.dll
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\refint\WebApiShop.dll
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.pdb
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.genruntimeconfig.cache
-C:\Users\נועה\Documents\לימודים\WebApiShop\WebApiShop\obj\Debug\net9.0\ref\WebApiShop.dll
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\appsettings.Development.json
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\appsettings.json
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.staticwebassets.runtime.json
@@ -99,36 +7,6 @@ F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiSho
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.runtimeconfig.json
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.dll
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\WebApiShop.pdb
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rpswa.dswa.cache.json
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.GeneratedMSBuildEditorConfig.editorconfig
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfoInputs.cache
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfo.cs
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.csproj.CoreCompileInputs.cache
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.MvcApplicationPartsAssemblyInfo.cache
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rjimswa.dswa.cache.json
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\scopedcss\bundle\WebApiShop.styles.css
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json.cache
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.development.json
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.dll
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\refint\WebApiShop.dll
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.pdb
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.genruntimeconfig.cache
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\ref\WebApiShop.dll
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\ema13zheqg-pg0huyktz9.gz
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\ema13zheqg-pg0huyktz9.gz
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\dsl5nreg3f-2o624enfd8.gz
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\nynb8sdqzf-03zdjpc6qt.gz
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\t1cr4o7721-4a860przj5.gz
-E:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\8uuw95e3ri-n3vtg1oux1.gz
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\dsl5nreg3f-2o624enfd8.gz
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.csproj.AssemblyReference.cache
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.csproj.Up2Date
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\8uuw95e3ri-p1or5jhvje.gz
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\zxcvbn-core.dll
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\Entity.dll
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\Repository.dll
@@ -136,5 +14,31 @@ F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\Services.
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\Entity.pdb
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\Repository.pdb
 F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\bin\Debug\net9.0\Services.pdb
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\nynb8sdqzf-f33s9begxo.gz
-F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\t1cr4o7721-aqrhz3glzl.gz
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.csproj.AssemblyReference.cache
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rpswa.dswa.cache.json
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.GeneratedMSBuildEditorConfig.editorconfig
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfoInputs.cache
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.AssemblyInfo.cs
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.csproj.CoreCompileInputs.cache
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.MvcApplicationPartsAssemblyInfo.cache
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.sourcelink.json
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rjimswa.dswa.cache.json
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\scopedcss\bundle\WebApiShop.styles.css
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\dsl5nreg3f-5iv09upphm.gz
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\ema13zheqg-pg0huyktz9.gz
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json.cache
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.development.json
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.endpoints.json
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.csproj.Up2Date
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.dll
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\refint\WebApiShop.dll
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.pdb
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.genruntimeconfig.cache
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\ref\WebApiShop.dll
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\nynb8sdqzf-rqncxii90e.gz
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\8uuw95e3ri-xv6u0x3nk3.gz
+F:\studies\Web API\lesson 4 h.w\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\t1cr4o7721-cb7ep2bv69.gz

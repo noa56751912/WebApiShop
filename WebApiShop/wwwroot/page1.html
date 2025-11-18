@@ -1,10 +1,9 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
-    <script defer src="page1.js"></script>
-    <title>webApi</title>
+    <title>WebApiShop</title>
+    <script defer src="Page1.js"></script>
     <style>
         .cont {
             display: flex;
@@ -28,65 +27,42 @@
         button {
             margin-top: 1vh;
         }
-<<<<<<< HEAD
-/*        .password{
-            height:50px;
-            width:100px;
-        }*/
-=======
->>>>>>> ed8913a3128f6670c339bb1fe93f875e19e64361
+
+        progress::-moz-progress-bar {
+            background-color: green;
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
-    <!--<button onClick="getResponse()">get Api</button>
-    <button onClick="postResponse()">post Api</button>-->
+
+
+
     <div class="cont">
         <div class="existUser">
             <h3>משתמש רשום</h3>
-<<<<<<< HEAD
             <lable for="userName1">שם משתמש</lable>
             <input type="email" id="userName1" required />
             <lable for="password1">סיסמא</lable>
             <input type="password" id="password1" required />
-=======
-            <lable id="userName2">שם משתמש</lable>
-            <input type="email" id="userName" required />
-            <lable id="password2">סיסמא</lable>
-            <input type="password" id="password" required />
->>>>>>> ed8913a3128f6670c339bb1fe93f875e19e64361
-            <button onclick="login()">click</button>
+            <button onclick="Login()">Log in</button>
         </div>
 
         <div class="newUser">
             <h3>משתמש חדש</h3>
-<<<<<<< HEAD
             <lable for="userName">שם משתמש</lable>
             <input type="email" id="userName" name="userName" required />
-            <lable for="firstName">שם פרטי</lable>
-            <input type="text" id="firstName" name="firstName" required />
-            <lable for="lastName">שם משפחה</lable>
-            <input type="text" id="lastName" name="lastName" required />
-            <lable for="password">סיסמא</lable>
-            <input type="password" id="password" name="password" required />
-            <button onclick="Register()">post</button>
-            <button onclick="PasswordStrength()">check password</button>
-            <label for="passwordScore">password score:</label>
-            <progress id="passwordScore" value="0" max="100"> 32% </progress>
-            
-        </div>
-        
-=======
-            <lable for="userName1">שם משתמש</lable>
-            <input type="email" id="userName1" name="userName" required />
             <lable for="userName">שם פרטי</lable>
             <input type="text" id="firstName" name="firstName" required />
             <lable for="userName">שם משפחה</lable>
             <input type="text" id="lastName" name="lastName" required />
-            <lable for="password1">סיסמא</lable>
-            <input type="password" id="password1" name="password" required />
-            <button onclick="Register()">post</button>
+            <lable for="password">סיסמא</lable>
+            <input type="password" id="password" name="password" required />
+            <button onclick="Register()"> Register</button>
+            <button onclick="PasswordStrength()">Check Password</button>
+            <label for="passwordStrength">password score:</label>
+            <progress id="passwordScore" value="0" max="100"> 32% </progress>
         </div>
->>>>>>> ed8913a3128f6670c339bb1fe93f875e19e64361
 
     </div>
 </body>

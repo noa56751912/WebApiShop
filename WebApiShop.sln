@@ -4,11 +4,11 @@ VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiShop", "WebApiShop\WebApiShop.csproj", "{F77D43F2-4706-4FA8-A5C1-32B7645D2C1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "EntityUsers\Entity.csproj", "{09299E9E-298F-4105-B492-B2D8DA34187B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{09299E9E-298F-4105-B492-B2D8DA34187B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "RepositoryUser\Repository.csproj", "{3C51F174-538F-4001-8F54-4E90091367A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{3C51F174-538F-4001-8F54-4E90091367A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "ServicesUser\Services.csproj", "{0FDDAFCC-238F-4ACA-A0DF-3E2C011117DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{0FDDAFCC-238F-4ACA-A0DF-3E2C011117DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
