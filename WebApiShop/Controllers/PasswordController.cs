@@ -9,7 +9,6 @@ namespace WebApiShop.Controllers
     public class PasswordController:ControllerBase
     {
         private readonly IServicePassword _IServicePassword;
-        ServicePassword passwordService= new ServicePassword();
         public PasswordController(IServicePassword IServicePassword)
         {
             _IServicePassword = IServicePassword;
@@ -18,7 +17,7 @@ namespace WebApiShop.Controllers
 
         public ActionResult<User> PasswordStrength([FromBody] string password)
         {
-            int strength = passwordService.PasswordStrength(password);
+            int strength = _IServicePassword.PasswordStrength(password);
             return Ok(strength);
         }
     }

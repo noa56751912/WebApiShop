@@ -4,7 +4,6 @@ namespace Services
 {
     public interface IServiceUser
     {
-        void Delete(int id);
         User? GetUserById(int id);
         User? Login(ExistingUser existingUser);
         User? Register(User newUser);
