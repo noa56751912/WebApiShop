@@ -3,7 +3,7 @@ using Entity;
 using Repository;
 namespace Services
 {
-    public class ServiceUser : IRepositoryUser, IServiceUser
+    public class ServiceUser : IServiceUser
     {
         private readonly IRepositoryUser _repository;
         private readonly IServicePassword _ServicePassword;
@@ -13,11 +13,6 @@ namespace Services
             _repository = repository;
             _ServicePassword = ServicePassword;
         }
-
-        
-
-
-        
         public User? GetUserById(int id)
         {
             return _repository.GetUserById(id);
@@ -41,15 +36,6 @@ namespace Services
                 return false;
             _repository.Update(id, updateUser);
             return true;
-        }
-        public void Delete(int id)
-        {
-            _repository.Delete(id);
-        }
-
-        void IRepositoryUser.Update(int id, User updateUser)
-        {
-            throw new NotImplementedException();
         }
     }
 }
