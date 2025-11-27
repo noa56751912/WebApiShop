@@ -8,7 +8,7 @@ namespace WebApiShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase, IServiceUser
+    public class UsersController : ControllerBase
     {
         private readonly IServiceUser _IServiceUser;
         public UsersController(IServiceUser IServiceUser) {
@@ -37,7 +37,7 @@ namespace WebApiShop.Controllers
         {
             User? user = _IServiceUser.Login(existingUser);
             if (user == null)
-                return NotFound(); 
+                return Unauthorized(); 
             return Ok(user);
         }
 
@@ -59,7 +59,7 @@ namespace WebApiShop.Controllers
            bool success= _IServiceUser.Update(id, updateUser);
             if(!success)
                 return BadRequest("Password");
-            return Ok();
+            return NoContent();
 
         }
 
