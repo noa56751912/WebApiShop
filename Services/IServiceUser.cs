@@ -4,10 +4,10 @@ namespace Services
 {
     public interface IServiceUser
     {
-        void Delete(int id);
-        User? GetUserById(int id);
-        User? Login(ExistingUser existingUser);
-        User? Register(User newUser);
-        bool Update(int id, User updateUser);
+        Task Delete(int id);
+        Task<User> GetUserById(int id);
+        Task<User> Login(ExistingUser existingUser);
+        Task<User> Register(User newUser);
+        Task<bool> Update(int id, User updateUser);
     }
 }

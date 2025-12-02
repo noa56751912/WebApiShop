@@ -4,10 +4,10 @@ namespace Repository
 {
     public interface IRepositoryUser
     {
-        void Delete(int id);
-        User? GetUserById(int id);
-        User? Login(ExistingUser existingUser);
-        User? Register(User newUser);
-        void Update(int id, User updateUser);
+        Task Delete(int id);
+        Task<User> GetUserById(int id);
+        Task<User> Login(ExistingUser existingUser);
+        Task<User> Register(User newUser);
+        Task Update(int id, User updateUser);
     }
 }

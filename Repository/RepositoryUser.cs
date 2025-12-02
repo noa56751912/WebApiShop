@@ -1,76 +1,46 @@
 ﻿using System.IO;
 using System.Text.Json;
 using Entity;
+using Microsoft.EntityFrameworkCore;
 namespace Repository
 {
     public class RepositoryUser : IRepositoryUser
     {
-        string path = "file.txt";
-        public User? GetUserById(int id)
+        public readonly UsersContext _context;
+        public RepositoryUser(UsersContext context)
         {
-            using (StreamReader reader = System.IO.File.OpenText(path))
-            {
-                string? currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-                    User? user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user?.Id == id)
-                        return user;
-                }
-                return null;
-            }
-
+            _context = context;
+        }
+        public async Task<User> GetUserById(int id)
+        {
+            return await _context.Users.FindAsync(id);
         }
 
-        public User? Login(ExistingUser existingUser)
+        public async Task<User> Login(ExistingUser existingUser)
         {
-            using (StreamReader reader = System.IO.File.OpenText(path))
-            {
-                string? currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-                    User? user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user?.Email == existingUser.Email && user.Password == existingUser.Password)
-                        return user;
-                }
-                return null;
-            }
-
+           return await _context.Users.FirstOrDefaultAsync(user=>user.Email==existingUser.Email&&user.Password==existingUser.Password);
         }
-        public User? Register(User newUser)
+        public async Task<User> Register(User newUser)
         {
-            //int loggedInId = sessionStorage.getItem('currentUserId');
-            int numberOfUsers = System.IO.File.ReadLines(path).Count();
-            newUser.Id = numberOfUsers + 1;
-            string userJson = JsonSerializer.Serialize(newUser);
-            System.IO.File.AppendAllText(path, userJson + Environment.NewLine);
+            await _context.Users.AddAsync(newUser);
+            await _context.SaveChangesAsync();
             return newUser;
         }
-        public void Update(int id, User updateUser)
+        public async Task Update(int id, User updateUser)
         {
-            string textToReplace = string.Empty;
-            using (StreamReader reader = System.IO.File.OpenText(path))
-            {
-                string? currentUserInFile;
-                while ((currentUserInFile = reader.ReadLine()) != null)
-                {
-                    User? user = JsonSerializer.Deserialize<User>(currentUserInFile);
-                    if (user?.Id == id)
-                        textToReplace = currentUserInFile;
-                }
-            }
-            if (textToReplace != string.Empty)
-            {
-                string text = System.IO.File.ReadAllText(path);
-                text = text.Replace(textToReplace, JsonSerializer.Serialize(updateUser));
-                System.IO.File.WriteAllText(path, text);
-            }
+            _context.Users.Update(updateUser);
+            await _context.SaveChangesAsync();
+           
         }
 
         public void Delete(int id)
         {
         }
 
+        Task IRepositoryUser.Delete(int id)
+        {
+            throw new NotImplementedException();
+        }
     }
 
 

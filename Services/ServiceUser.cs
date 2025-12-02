@@ -3,7 +3,7 @@ using Entity;
 using Repository;
 namespace Services
 {
-    public class ServiceUser : IRepositoryUser, IServiceUser
+    public class ServiceUser : IServiceUser
     {
         private readonly IRepositoryUser _repository;
         private readonly IServicePassword _ServicePassword;
@@ -18,38 +18,35 @@ namespace Services
 
 
         
-        public User? GetUserById(int id)
+        public async Task<User> GetUserById(int id)
         {
-            return _repository.GetUserById(id);
+            return await _repository.GetUserById(id);
         }
 
-        public User? Login(ExistingUser existingUser)
+        public async Task<User> Login(ExistingUser existingUser)
         {
-            return _repository.Login(existingUser);
+            return await _repository.Login(existingUser);
         }
-        public User? Register(User newUser)
+        public async Task<User> Register(User newUser)
         {
             int passScore = _ServicePassword.PasswordStrength(newUser.Password);
             if (passScore < 2)
                 return null;
-            return _repository.Register(newUser);
+            return await _repository.Register(newUser);
+            
         }
-        public bool Update(int id, User updateUser)
+        public async Task<bool> Update(int id, User updateUser)
         {
             int passScore = _ServicePassword.PasswordStrength(updateUser.Password);
             if (passScore < 2)
                 return false;
-            _repository.Update(id, updateUser);
+            await _repository.Update(id, updateUser);
             return true;
         }
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
-            _repository.Delete(id);
+            await _repository.Delete(id);
         }
 
-        void IRepositoryUser.Update(int id, User updateUser)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
