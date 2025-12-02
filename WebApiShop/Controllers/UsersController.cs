@@ -8,7 +8,7 @@ namespace WebApiShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase, IServiceUser
+    public class UsersController : ControllerBase
     {
         private readonly IServiceUser _IServiceUser;
         public UsersController(IServiceUser IServiceUser) {
@@ -21,9 +21,9 @@ namespace WebApiShop.Controllers
        
         // GET api/Users/5
         [HttpGet("{id}")]
-        public ActionResult<User> GetUserById(int id)
+        public async Task<ActionResult<User>> GetUserById(int id)
         {
-            User? user = _IServiceUser.GetUserById(id);
+            User? user =await _IServiceUser.GetUserById(id);
             if (user == null)
             {
                 return NotFound();
@@ -33,9 +33,9 @@ namespace WebApiShop.Controllers
 
         // POST api/Users/Login
         [HttpPost("Login")]
-        public ActionResult<User> Login([FromBody] ExistingUser existingUser)
+        public async Task<ActionResult<User>> Login([FromBody] ExistingUser existingUser)
         {
-            User? user = _IServiceUser.Login(existingUser);
+            User? user =await _IServiceUser.Login(existingUser);
             if (user == null)
                 return NotFound(); 
             return Ok(user);
@@ -43,9 +43,9 @@ namespace WebApiShop.Controllers
 
         
         [HttpPost]
-        public ActionResult<User> Register([FromBody] User newUser)
+        public async Task<ActionResult<User>> Register([FromBody] User newUser)
         {
-            User? user = _IServiceUser.Register(newUser);
+            User? user =await _IServiceUser.Register(newUser);
             if (user == null)
                 return BadRequest("Password"); 
 
@@ -54,9 +54,9 @@ namespace WebApiShop.Controllers
 
         // PUT api/Users/5
         [HttpPut("{id}")]
-        public IActionResult Update(int id, [FromBody] User updateUser)
+        public async Task<IActionResult> Update(int id, [FromBody] User updateUser)
         {
-           bool success= _IServiceUser.Update(id, updateUser);
+           bool success= await _IServiceUser.Update(id, updateUser);
             if(!success)
                 return BadRequest("Password");
             return Ok();
@@ -65,29 +65,11 @@ namespace WebApiShop.Controllers
 
         // DELETE api/Users/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
-            _IServiceUser.Delete(id);
+            await _IServiceUser.Delete(id);
         }
 
-        User? IServiceUser.GetUserById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        User? IServiceUser.Login(ExistingUser existingUser)
-        {
-            throw new NotImplementedException();
-        }
-
-        User? IServiceUser.Register(User newUser)
-        {
-            throw new NotImplementedException();
-        }
-
-        bool IServiceUser.Update(int id, User updateUser)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }

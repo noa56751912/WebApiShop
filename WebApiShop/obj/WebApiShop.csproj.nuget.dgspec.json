@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\WebApiShop.csproj": {}
+    "F:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj": {}
   },
   "projects": {
-    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj": {
+    "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj",
+        "projectUniqueName": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj",
+        "projectPath": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\obj\\",
+        "outputPath": "F:\\studies\\API\\WebApiShop\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj": {
+    "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj",
+        "projectUniqueName": "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj",
+        "projectPath": "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\obj\\",
+        "outputPath": "F:\\studies\\API\\WebApiShop\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj"
+              "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
+                "projectPath": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj"
               }
             }
           }
@@ -119,6 +119,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
             "zxcvbn-core": {
               "target": "Package",
               "version": "[8.0.0-beta0002, )"
@@ -144,14 +148,14 @@
         }
       }
     },
-    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj": {
+    "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj",
+        "projectUniqueName": "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj",
+        "projectPath": "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\obj\\",
+        "outputPath": "F:\\studies\\API\\WebApiShop\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -172,11 +176,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj"
+              "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
+                "projectPath": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj"
               },
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj"
+              "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj": {
+                "projectPath": "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj"
               }
             }
           }
@@ -222,14 +226,14 @@
         }
       }
     },
-    "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\WebApiShop.csproj": {
+    "F:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
+        "projectUniqueName": "F:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
         "projectName": "WebApiShop",
-        "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
+        "projectPath": "F:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\WebApiShop\\obj\\",
+        "outputPath": "F:\\studies\\API\\WebApiShop\\WebApiShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -250,14 +254,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Entity\\Entity.csproj"
+              "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
+                "projectPath": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj"
               },
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Repository\\Repository.csproj"
+              "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj": {
+                "projectPath": "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj"
               },
-              "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj": {
-                "projectPath": "F:\\studies\\Web API\\lesson 4 h.w\\WebApiShop\\Services\\Services.csproj"
+              "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj": {
+                "projectPath": "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj"
               }
             }
           }
@@ -277,6 +281,28 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.11, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.11, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
