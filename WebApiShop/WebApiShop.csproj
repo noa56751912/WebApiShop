@@ -7,6 +7,45 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="obj\Debug\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Debug\net9.0\WebApiShop.AssemblyInfo.cs" />
+    <Compile Include="obj\Debug\net9.0\WebApiShop.GlobalUsings.g.cs" />
+    <Compile Include="obj\Release\net9.0\.NETCoreApp,Version=v9.0.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\net9.0\WebApiShop.AssemblyInfo.cs" />
+    <Compile Include="obj\Release\net9.0\WebApiShop.GlobalUsings.g.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="obj\Debug\net9.0\ApiEndpoints.json" />
+    <Content Include="obj\Debug\net9.0\rbcswa.dswa.cache.json" />
+    <Content Include="obj\Debug\net9.0\rpswa.dswa.cache.json" />
+    <Content Include="obj\Debug\net9.0\staticwebassets.references.upToDateCheck.txt" />
+    <Content Include="obj\Debug\net9.0\staticwebassets.removed.txt" />
+    <Content Include="obj\Debug\net9.0\WebApiShop.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\net9.0\WebApiShop.sourcelink.json" />
+    <Content Include="obj\project.assets.json" />
+    <Content Include="obj\WebApiShop.csproj.nuget.dgspec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="obj\Debug\net9.0\apphost.exe" />
+    <None Include="obj\Debug\net9.0\WebApiShop.AssemblyInfoInputs.cache" />
+    <None Include="obj\Debug\net9.0\WebApiShop.assets.cache" />
+    <None Include="obj\Debug\net9.0\WebApiShop.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\net9.0\WebApiShop.csproj.BuildWithSkipAnalyzers" />
+    <None Include="obj\Debug\net9.0\WebApiShop.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\net9.0\WebApiShop.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\Debug\net9.0\WebApiShop.MvcApplicationPartsAssemblyInfo.cache" />
+    <None Include="obj\project.nuget.cache" />
+    <None Include="obj\Release\net9.0\WebApiShop.AssemblyInfoInputs.cache" />
+    <None Include="obj\Release\net9.0\WebApiShop.assets.cache" />
+    <None Include="obj\Release\net9.0\WebApiShop.csproj.AssemblyReference.cache" />
+    <None Include="obj\Release\net9.0\WebApiShop.GeneratedMSBuildEditorConfig.editorconfig" />
+    <None Include="obj\WebApiShop.csproj.nuget.g.props" />
+    <None Include="obj\WebApiShop.csproj.nuget.g.targets" />
+  </ItemGroup>
+
+  <ItemGroup>
 
    
 
@@ -19,6 +58,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.6" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.11">
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -29,6 +69,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="obj\Debug\net9.0\compressed\" />
+    <Folder Include="obj\Debug\net9.0\refint\" />
+    <Folder Include="obj\Debug\net9.0\ref\" />
+    <Folder Include="obj\Debug\net9.0\staticwebassets\" />
+    <Folder Include="obj\Release\net9.0\refint\" />
+    <Folder Include="obj\Release\net9.0\ref\" />
   </ItemGroup>
 
 </Project>

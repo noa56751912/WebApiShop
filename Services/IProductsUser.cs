@@ -2,7 +2,7 @@
 
 namespace Services
 {
-    public interface IServiceUser
+    public interface IProductsUser
     {
       
         Task<User> GetUserById(int id);

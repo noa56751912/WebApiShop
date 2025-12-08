@@ -1,3 +1,0 @@
-{"Email":"a@a","FirstName":"a","LastName":"s","Password":"12345@@@aaaAAA","Id":1}
-{"Email":"n@gmail.com","FirstName":"a","LastName":"b","Password":"123@@@aaaAAA","Id":2}
-{"Email":"Yael","FirstName":"Amar ","LastName":"yael","Password":"12345aaaAAAAA","Id":3}

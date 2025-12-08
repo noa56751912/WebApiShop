@@ -6,8 +6,8 @@ namespace Repository
 {
     public class RepositoryUser : IRepositoryUser
     {
-        public readonly UsersContext _context;
-        public RepositoryUser(UsersContext context)
+        public readonly ApiShopContext _context;
+        public RepositoryUser(ApiShopContext context)
         {
             _context = context;
         }
@@ -33,14 +33,9 @@ namespace Repository
            
         }
 
-        public void Delete(int id)
-        {
-        }
+       
 
-        Task IRepositoryUser.Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 
 
