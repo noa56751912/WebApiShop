@@ -10,9 +10,9 @@ namespace WebApiShop.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IServiceUser _IServiceUser;
-        public ProductsController(IServiceUser IServiceUser) {
-            _IServiceUser = IServiceUser;
+        private readonly IServiceUser _serviceUser;
+        public ProductsController(IServiceUser serviceUser) {
+            _serviceUser = serviceUser;
         }
         //ServiceUser services = new ServiceUser();
 
@@ -23,7 +23,7 @@ namespace WebApiShop.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<User>> GetUserById(int id)
         {
-            User? user =await _IServiceUser.GetUserById(id);
+            User? user =await _serviceUser.GetUserById(id);
             if (user == null)
             {
                 return NotFound();
@@ -35,9 +35,9 @@ namespace WebApiShop.Controllers
         [HttpPost("Login")]
         public async Task<ActionResult<User>> Login([FromBody] ExistingUser existingUser)
         {
-            User? user =await _IServiceUser.Login(existingUser);
+            User? user =await _serviceUser.Login(existingUser);
             if (user == null)
-                return NotFound(); 
+                return Unauthorized("Invalid credentials"); 
             return Ok(user);
         }
 
@@ -45,9 +45,9 @@ namespace WebApiShop.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> Register([FromBody] User newUser)
         {
-            User? user =await _IServiceUser.Register(newUser);
+            User? user =await _serviceUser.Register(newUser);
             if (user == null)
-                return BadRequest("Password"); 
+                return BadRequest("Password too weak"); 
 
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
         }
@@ -56,10 +56,10 @@ namespace WebApiShop.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] User updateUser)
         {
-           bool success= await _IServiceUser.Update(id, updateUser);
+           bool success= await _serviceUser.Update(id, updateUser);
             if(!success)
-                return BadRequest("Password");
-            return Ok();
+                return BadRequest("Password too weak");
+            return NoContent();
 
         }
 

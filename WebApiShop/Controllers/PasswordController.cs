@@ -8,17 +8,16 @@ namespace WebApiShop.Controllers
     [ApiController]
     public class PasswordController:ControllerBase
     {
-        private readonly IServicePassword _IServicePassword;
-        ServicePassword passwordService= new ServicePassword();
-        public PasswordController(IServicePassword IServicePassword)
+        private readonly IServicePassword _servicePassword;
+        public PasswordController(IServicePassword servicePassword)
         {
-            _IServicePassword = IServicePassword;
+            _servicePassword = servicePassword;
         }
         [HttpPost("PasswordStrength")]
 
-        public ActionResult<User> PasswordStrength([FromBody] string password)
+        public ActionResult<int> PasswordStrength([FromBody] string password)
         {
-            int strength = passwordService.PasswordStrength(password);
+            int strength = _servicePassword.PasswordStrength(password);
             return Ok(strength);
         }
     }
