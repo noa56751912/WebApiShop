@@ -6,7 +6,7 @@ namespace Repository
 {
     public class RepositoryUser : IRepositoryUser
     {
-        public readonly ApiShopContext _context;
+        private readonly ApiShopContext _context;
         public RepositoryUser(ApiShopContext context)
         {
             _context = context;
