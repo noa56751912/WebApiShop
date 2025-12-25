@@ -8,6 +8,8 @@
 
   <ItemGroup>
  
+    <ProjectReference Include="..\ClassLibrary1\DTOs.csproj" />
+ 
     <ProjectReference Include="..\Entity\Entity.csproj" />
   </ItemGroup>
 

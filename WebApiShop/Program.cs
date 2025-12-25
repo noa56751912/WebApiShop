@@ -1,4 +1,6 @@
+using Entity.Models;
 using Microsoft.EntityFrameworkCore;
+using NLog.Web;
 using Repository;
 using Services;
 
@@ -8,14 +10,15 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddScoped<IRepositoryUser, RepositoryUser>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 
-builder.Services.AddScoped<IServiceUser, ServiceUser>();
+builder.Services.AddScoped<IUserServices, UserServices>();
 
-builder.Services.AddScoped<IServicePassword, ServicePassword>();
+builder.Services.AddScoped<IPasswordServices, PasswordServices>();
 builder.Services.AddDbContext<ApiShopContext>(option=>option.UseSqlServer("Data Source=Noa;Initial Catalog=ApiShop;Integrated Security=True;Trust Server Certificate=True"));
 
 builder.Services.AddOpenApi();
+builder.Host.UseNLog();
 
 var app = builder.Build();
 

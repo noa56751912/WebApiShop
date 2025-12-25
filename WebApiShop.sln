@@ -1,4 +1,5 @@
-﻿Microsoft Visual Studio Solution File, Format Version 12.00
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -9,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{3C51F174-538F-4001-8F54-4E90091367A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Services.csproj", "{0FDDAFCC-238F-4ACA-A0DF-3E2C011117DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOs", "ClassLibrary1\DTOs.csproj", "{6AD1F886-C232-4327-84FD-33711B4A2888}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,6 +35,10 @@ Global
 		{0FDDAFCC-238F-4ACA-A0DF-3E2C011117DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0FDDAFCC-238F-4ACA-A0DF-3E2C011117DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0FDDAFCC-238F-4ACA-A0DF-3E2C011117DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AD1F886-C232-4327-84FD-33711B4A2888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AD1F886-C232-4327-84FD-33711B4A2888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AD1F886-C232-4327-84FD-33711B4A2888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AD1F886-C232-4327-84FD-33711B4A2888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

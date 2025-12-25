@@ -22,7 +22,7 @@ async function updateUser() {
 
         console.log("PUT body:", JSON.stringify(data));
 
-        const response = await fetch(`api/Users/${Id}`, {
+        const response = await fetch(`api/User/${Id}`, {
             method: 'PUT',
             headers: {
 

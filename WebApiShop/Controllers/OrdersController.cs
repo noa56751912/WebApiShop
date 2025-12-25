@@ -8,64 +8,35 @@ namespace WebApiShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class OrdersController : ControllerBase
     {
-        private readonly IServiceUser _IServiceUser;
-        public ProductsController(IServiceUser IServiceUser) {
-            _IServiceUser = IServiceUser;
+        private readonly IOrdersServices _ordersServices;
+        public OrdersController(IOrdersServices ordersServices)
+        {
+            _ordersServices = ordersServices;
         }
-        //ServiceUser services = new ServiceUser();
 
-        //private static List<User> users = new List<User>();
-
-       
-        // GET api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<User>> GetUserById(int id)
+        public async Task<ActionResult<Order>> Get(int id)
         {
-            User? user =await _IServiceUser.GetUserById(id);
-            if (user == null)
-            {
-                return NotFound();
-            }
-            return Ok(user);
+            Order? order = await _ordersServices.GetOrderById(id);
+            if (order != null)
+                return Ok(order);
+            return NotFound();
         }
 
-        // POST api/Users/Login
-        [HttpPost("Login")]
-        public async Task<ActionResult<User>> Login([FromBody] ExistingUser existingUser)
-        {
-            User? user =await _IServiceUser.Login(existingUser);
-            if (user == null)
-                return NotFound(); 
-            return Ok(user);
-        }
-
-        
         [HttpPost]
-        public async Task<ActionResult<User>> Register([FromBody] User newUser)
+        public async Task<ActionResult<Order>> Post([FromBody] Order order)
         {
-            User? user =await _IServiceUser.Register(newUser);
-            if (user == null)
-                return BadRequest("Password"); 
-
-            return CreatedAtAction(nameof(GetUserById), new { id = newUser.Id }, newUser);
+            Order newOrder = await _ordersServices.AddOrder(order);
+            if (newOrder == null)
+                return BadRequest();
+            return CreatedAtAction(nameof(Get), new { id = newOrder.OrderId }, newOrder);
         }
-
-        // PUT api/Users/5
-        [HttpPut("{id}")]
-        public async Task<IActionResult> Update(int id, [FromBody] User updateUser)
-        {
-           bool success= await _IServiceUser.Update(id, updateUser);
-            if(!success)
-                return BadRequest("Password");
-            return Ok();
-
-        }
+    }
 
         // DELETE api/Users/5
         
 
         
     }
-}

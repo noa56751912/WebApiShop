@@ -7,7 +7,7 @@ using Zxcvbn;
 
 namespace Services
 {
-    public class ServicePassword : IServicePassword
+    public class PasswordServices : IPasswordServices
     {
         public int PasswordStrength(string password)
         {

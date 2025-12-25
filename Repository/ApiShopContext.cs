@@ -3,9 +3,8 @@
 using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using Entity;
 
-namespace Repository;
+namespace Entity.Models;
 
 public partial class ApiShopContext : DbContext
 {
@@ -28,63 +27,61 @@ public partial class ApiShopContext : DbContext
     {
         modelBuilder.Entity<Category>(entity =>
         {
+            entity.HasKey(e => e.CategoryId).HasName("PK__Categori__6DB38D6E31B1C784");
+
+            entity.HasIndex(e => e.CategoryName, "UQ__Categori__B35EB419AF5A6C69").IsUnique();
+
             entity.Property(e => e.CategoryId).HasColumnName("Category_Id");
             entity.Property(e => e.CategoryName)
                 .IsRequired()
                 .HasMaxLength(255)
+                .IsUnicode(false)
                 .HasColumnName("Category_Name");
         });
 
         modelBuilder.Entity<Order>(entity =>
         {
-            entity.HasKey(e => e.OrderId).HasName("PK__Orders__F1E4607B91A1C90C");
+            entity.HasKey(e => e.OrderId).HasName("PK__Orders__F1E4607B7E763A60");
 
-            entity.Property(e => e.OrderId)
-                .ValueGeneratedNever()
-                .HasColumnName("Order_Id");
+            entity.Property(e => e.OrderId).HasColumnName("Order_Id");
             entity.Property(e => e.OrderDate).HasColumnName("Order_Date");
             entity.Property(e => e.OrderSum).HasColumnName("Order_Sum");
             entity.Property(e => e.UserId).HasColumnName("User_Id");
 
             entity.HasOne(d => d.User).WithMany(p => p.Orders)
                 .HasForeignKey(d => d.UserId)
-                .HasConstraintName("FK__Orders__User_Id__412EB0B6");
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK__Orders__User_Id__4316F928");
         });
 
         modelBuilder.Entity<OrderItem>(entity =>
         {
-            entity.HasKey(e => e.OrderItemId).HasName("PK__Order_It__48456821ED21B1E5");
+            entity.HasKey(e => e.OrderItemId).HasName("PK__Order_It__48456821A1B109CE");
 
             entity.ToTable("Order_Item");
 
-            entity.HasIndex(e => e.ProductId, "UQ__Order_It__9834FBBB42357017").IsUnique();
-
-            entity.Property(e => e.OrderItemId)
-                .ValueGeneratedNever()
-                .HasColumnName("Order_Item_Id");
+            entity.Property(e => e.OrderItemId).HasColumnName("Order_Item_Id");
             entity.Property(e => e.OrderId).HasColumnName("Order_Id");
             entity.Property(e => e.ProductId).HasColumnName("Product_Id");
 
             entity.HasOne(d => d.Order).WithMany(p => p.OrderItems)
                 .HasForeignKey(d => d.OrderId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Order_Ite__Order__45F365D3");
+                .HasConstraintName("FK__Order_Ite__Order__46E78A0C");
 
-            entity.HasOne(d => d.Product).WithOne(p => p.OrderItem)
-                .HasForeignKey<OrderItem>(d => d.ProductId)
+            entity.HasOne(d => d.Product).WithMany(p => p.OrderItems)
+                .HasForeignKey(d => d.ProductId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Order_Ite__Produ__44FF419A");
+                .HasConstraintName("FK__Order_Ite__Produ__45F365D3");
         });
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.HasKey(e => e.ProductId).HasName("PK__Products__9834FBBA67432B26");
+            entity.HasKey(e => e.ProductId).HasName("PK__Products__9834FBBAB96136D8");
 
-            entity.HasIndex(e => e.ProductName, "UQ__Products__723D86949FCC9CF9").IsUnique();
+            entity.HasIndex(e => e.ProductName, "UQ__Products__723D869432BD4EFE").IsUnique();
 
-            entity.Property(e => e.ProductId)
-                .ValueGeneratedNever()
-                .HasColumnName("Product_Id");
+            entity.Property(e => e.ProductId).HasColumnName("Product_Id");
             entity.Property(e => e.CategoryId).HasColumnName("Category_Id");
             entity.Property(e => e.Description).IsRequired();
             entity.Property(e => e.Price).HasColumnType("money");
@@ -96,23 +93,36 @@ public partial class ApiShopContext : DbContext
             entity.HasOne(d => d.Category).WithMany(p => p.Products)
                 .HasForeignKey(d => d.CategoryId)
                 .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Products__Catego__3E52440B");
+                .HasConstraintName("FK__Products__Catego__3C69FB99");
         });
 
         modelBuilder.Entity<User>(entity =>
         {
+            entity.HasKey(e => e.UserId).HasName("PK__User__206D91700750F992");
+
             entity.ToTable("User");
 
-            entity.HasIndex(e => e.Email, "unique_email").IsUnique();
+            entity.HasIndex(e => e.Password, "UQ__User__87909B15D3878B46").IsUnique();
 
-            entity.Property(e => e.Email).HasMaxLength(255);
+            entity.HasIndex(e => e.Email, "UQ__User__A9D10534DA72202F").IsUnique();
+
+            entity.Property(e => e.UserId).HasColumnName("User_Id");
+            entity.Property(e => e.Email)
+                .IsRequired()
+                .HasMaxLength(255)
+                .IsUnicode(false);
             entity.Property(e => e.FirstName)
                 .IsRequired()
+                .IsUnicode(false)
                 .HasColumnName("First_Name");
             entity.Property(e => e.LastName)
                 .IsRequired()
+                .IsUnicode(false)
                 .HasColumnName("Last_Name");
-            entity.Property(e => e.Password).IsRequired();
+            entity.Property(e => e.Password)
+                .IsRequired()
+                .HasMaxLength(255)
+                .IsUnicode(false);
         });
 
         OnModelCreatingPartial(modelBuilder);

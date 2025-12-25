@@ -3,7 +3,7 @@ async function PasswordStrength() {
     try {
         const password = document.querySelector("#password").value
         const progress = document.querySelector("#passwordScore")
-        const response = await fetch("api/Password/PasswordStrength", {
+        const response = await fetch("/api/Password/PasswordStrength", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -48,7 +48,7 @@ async function Login() {
         const data = { Email, password };
 
 
-        const response = await fetch('api/Users/Login',{
+        const response = await fetch('/api/User/Login',{
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -94,7 +94,7 @@ async function Register() {
 
         const data = { Email, FirstName, LastName, Password };
 
-        const response = await fetch('api/Users', {
+        const response = await fetch('api/User', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -110,7 +110,7 @@ async function Register() {
 
         }
         if (!response.ok) {
-            throw Error("run into a problem")
+            throw Error("run into a problem!!!")
         }
         const dataRegister = await response.json();
         alert("sucessfly sign in")
