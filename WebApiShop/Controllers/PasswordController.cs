@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Repository;
 using Services;
+using DTOs;
 namespace WebApiShop.Controllers
 {
     [Route("api/[controller]")]
@@ -16,7 +17,7 @@ namespace WebApiShop.Controllers
         }
         [HttpPost("PasswordStrength")]
 
-        public ActionResult<User> PasswordStrength([FromBody] string password)
+        public ActionResult<UserDTO> PasswordStrength([FromBody] string password)
         {
             int strength = passwordService.PasswordStrength(password);
             return Ok(strength);

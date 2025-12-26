@@ -1,50 +1,58 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Entity;
-using Entity.Models;
+﻿using Entity;
+using Microsoft.EntityFrameworkCore;
 using Repository;
+using TestProject;
+using Xunit;
 
 namespace TestProject
 {
-    public class UserRepositoyIntegrationTests : IClassFixture<DatabaseFixture>
+    
+    public class UserRepositoryIntegrationTests : IClassFixture<DatabaseFixture>
     {
-        private readonly ApiShopContext _dbContext;
-        private readonly UserRepository _userRepository;
-        public UserRepositoyIntegrationTests(DatabaseFixture fixture)
+        private readonly DatabaseFixture _fixture;
+        private readonly UserRepository _repository;
+
+        public UserRepositoryIntegrationTests(DatabaseFixture fixture)
         {
-            _dbContext = fixture.Context;
-            _userRepository = new UserRepository(_dbContext);
+            _fixture = fixture;
+            _repository = new UserRepository(_fixture.Context);
         }
 
         [Fact]
-        public async Task Register_ShouldAddUserToDatabase_WhenUserIsValid()
+        public async Task Register_And_Then_GetUserById_ShouldWorkInRealDb()
         {
             // Arrange
-            _dbContext.Users.RemoveRange(_dbContext.Users);
-            await _dbContext.SaveChangesAsync();
-            var userToAdd = new User
+            var user = new User
             {
-                Email = "newUser@gmail.com",
-                FirstName = "Test",
-                LastName = "User",
-                Password = "SecurePassword123"
+                Email = "integration@test.com",
+                Password = "secure",
+                FirstName = "Integration",
+                LastName = "Test"
             };
 
             // Act
-            var result = await _userRepository.Register(userToAdd);
+            var registeredUser = await _repository.Register(user);
+            var foundUser = await _repository.GetUserById(registeredUser.UserId);
 
             // Assert
-            Assert.NotNull(result);
-            Assert.NotEqual(0, result.UserId);
-            Assert.Equal("New", result.FirstName);
+            Assert.NotNull(foundUser);
+            Assert.Equal("integration@test.com", foundUser.Email);
+        }
 
-            var userInDb = await _dbContext.Users.FindAsync(result.UserId);
-            Assert.NotNull(userInDb);
-            Assert.Equal("newUser@gmail.com", userInDb.Email);
+        [Fact]
+        public async Task Update_ShouldPersistChangesInDb()
+        {
+            // Arrange
+            var user = new User { Email = "update@test.com", Password = "1", FirstName = "Before",  LastName = "Test" };
+            await _repository.Register(user);
+
+            // Act
+            user.FirstName = "After";
+            await _repository.Update(user.UserId, user);
+
+            // Assert
+            var updatedUser = await _repository.GetUserById(user.UserId);
+            Assert.Equal("After", updatedUser.FirstName);
         }
     }
-}
 }

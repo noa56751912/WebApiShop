@@ -163,7 +163,6 @@ E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmrazor.dswa.cache.json
 E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\scopedcss\bundle\WebApiShop.styles.css
 E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\dsl5nreg3f-5iv09upphm.gz
-E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\nynb8sdqzf-rqncxii90e.gz
 E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\ema13zheqg-pg0huyktz9.gz
 E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json
 E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\staticwebassets.build.json.cache
@@ -177,4 +176,17 @@ E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.pdb
 E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\WebApiShop.genruntimeconfig.cache
 E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\ref\WebApiShop.dll
 E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\t1cr4o7721-dhj4gyuyd8.gz
-E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\8uuw95e3ri-7l0qm53c4i.gz
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\nlog.config
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\AutoMapper.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\BouncyCastle.Cryptography.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\MailKit.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\MimeKit.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\NLog.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\NLog.Extensions.Logging.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\NLog.MailKit.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\NLog.Web.AspNetCore.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\DTOs.dll
+E:\studies\API\WebApiShop\WebApiShop\bin\Debug\net9.0\DTOs.pdb
+E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\nynb8sdqzf-3fxqxw4nrr.gz
+E:\studies\API\WebApiShop\WebApiShop\obj\Debug\net9.0\compressed\8uuw95e3ri-cfdyxeukrq.gz

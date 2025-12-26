@@ -14,7 +14,7 @@ namespace Services
             _categoriesRepository = categoriesRepository;
             mapper = _mapper;
         }
-        Task<IEnumerable<CategoryDTO>> GetCategories()
+        public async Task<IEnumerable<CategoryDTO>> GetCategories()
         {
             return _mapper.Map<IEnumerable<Category>, IEnumerable<CategoryDTO>>(await _categoriesRepository.GetCategories());
         }

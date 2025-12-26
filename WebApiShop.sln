@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "Services\Servic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTOs", "ClassLibrary1\DTOs.csproj", "{6AD1F886-C232-4327-84FD-33711B4A2888}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{45E1E89A-AB20-42B3-BFA6-32D5EECCDBEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{6AD1F886-C232-4327-84FD-33711B4A2888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6AD1F886-C232-4327-84FD-33711B4A2888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6AD1F886-C232-4327-84FD-33711B4A2888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45E1E89A-AB20-42B3-BFA6-32D5EECCDBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45E1E89A-AB20-42B3-BFA6-32D5EECCDBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45E1E89A-AB20-42B3-BFA6-32D5EECCDBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45E1E89A-AB20-42B3-BFA6-32D5EECCDBEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,14 +11,15 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
-
 builder.Services.AddScoped<IUserServices, UserServices>();
-
 builder.Services.AddScoped<IPasswordServices, PasswordServices>();
+builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 builder.Services.AddDbContext<ApiShopContext>(option=>option.UseSqlServer("Data Source=Noa;Initial Catalog=ApiShop;Integrated Security=True;Trust Server Certificate=True"));
 
 builder.Services.AddOpenApi();
 builder.Host.UseNLog();
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
 
 var app = builder.Build();
 

@@ -15,8 +15,8 @@ async function updateUser() {
             return;
         }
 
-        const Id = currentUser.id;
-        const data = { Id, Email, FirstName, LastName, password: password };
+        const Id = currentUser.userId;
+        const data = { userId:Id, Email, FirstName, LastName, Password: password };
 
 
 
