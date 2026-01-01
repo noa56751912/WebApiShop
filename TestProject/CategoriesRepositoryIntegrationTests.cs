@@ -19,7 +19,7 @@ namespace TestProject
         [Fact]
         public async Task GetCategories_ShouldReturnDataFromRealDb()
         {
-            // Arrange - ניקוי והכנסת נתונים אמיתיים לטבלת הטסטים
+            // Arrange 
             _fixture.Context.Categories.RemoveRange(_fixture.Context.Categories);
 
             var testCategory = new Category { CategoryName = "Home Decor" };

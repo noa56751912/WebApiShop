@@ -19,7 +19,7 @@ namespace TestProject
         [Fact]
         public async Task AddOrder_ShouldPersistInRealDatabase()
         {
-            // Arrange - ניקוי טבלה לצורך הטסט
+            
             
             _fixture.Context.Orders.RemoveRange(_fixture.Context.Orders);
 

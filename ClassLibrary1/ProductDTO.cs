@@ -6,20 +6,15 @@ using System.Threading.Tasks;
 
 namespace DTOs
 {
-    public record ProductDTO
-    (
-        int ProductId,
-        
+    public record ProductDTO(
+      int ProductId,
 
-        string ProductName,
+      string ProductName,
 
+      decimal Price,
 
-        decimal Price,
-        
+      int CategoryId,
 
-        int CategoryId,
-       
-
-        string Description
-        );
+      string Description
+         );
 }

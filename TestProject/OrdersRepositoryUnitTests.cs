@@ -15,7 +15,6 @@ namespace TestProject
 
         public OrdersRepositoryUnitTests()
         {
-            // יצירת מוק לקונטקסט (שים לב לשם הקלאס ApiShopContext)
             _mockContext = new Mock<ApiShopContext>(new DbContextOptions<ApiShopContext>());
             _repository = new OrdersRepository(_mockContext.Object);
         }

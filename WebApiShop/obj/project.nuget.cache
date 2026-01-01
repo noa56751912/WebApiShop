@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Omh/fptpkzk=",
+  "dgSpecHash": "YTkYEV3sA9M=",
   "success": true,
-  "projectFilePath": "E:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
+  "projectFilePath": "F:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\נועה\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\נועה\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
