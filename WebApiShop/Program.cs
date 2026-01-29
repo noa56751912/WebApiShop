@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using NLog.Web;
 using Repository;
 using Services;
+using WebApiShop.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,8 @@ builder.Services.AddScoped<ICategoriesServices, CategoriesServices>();
 builder.Services.AddScoped<IProductsServices, ProductsServices>();
 builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 builder.Services.AddScoped<IOrdersServices, OrdersServices>();
+builder.Services.AddScoped<IRatingRepository, RatingRepository>();
+builder.Services.AddScoped<IRatingService, RatingService>();
 
 builder.Services.AddDbContext<ApiShopContext>(option=>option.UseSqlServer("Data Source=Noa;Initial Catalog=ApiShop;Integrated Security=True;Trust Server Certificate=True"));
 
@@ -41,6 +44,10 @@ app.UseSwaggerUI(options =>
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
+
+app.UseErrorHandling();
+
+app.UseRating();
 
 app.UseStaticFiles();
 

@@ -16,7 +16,7 @@ namespace DTOs
         int OrderId,
         
 
-        int Quantity
+        int? Quantity
         
         );
 }

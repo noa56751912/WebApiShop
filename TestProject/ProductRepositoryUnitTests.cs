@@ -21,39 +21,50 @@ namespace TestProject
         }
 
         [Fact]
-        public async Task GetProducts_ShouldReturnAllProductsFromContext()
+        private ApiShopContext GetDbContext()
         {
-            // Arrange - הכנת נתונים פיקטיביים
-            var products = new List<Product>
-            {
-                new Product { ProductId = 1, ProductName = "Laptop", Price = 3000 },
-                new Product { ProductId = 2, ProductName = "Mouse", Price = 150 },
-                new Product { ProductId = 3, ProductName = "Keyboard", Price = 250 }
-            };
-
-            // הגדרת המוק שיחזיר את הרשימה הזו כשפונים ל-Products
-            _mockContext.Setup(x => x.Products).ReturnsDbSet(products);
-
-            // Act - הרצת הפונקציה
-            var result = await _repository.GetProducts();
-
-            // Assert - בדיקה שהתוצאה נכונה
-            Assert.NotNull(result);
-            Assert.Equal(3, result.Count());
-            Assert.Contains(result, p => p.ProductName == "Laptop");
+            var options = new DbContextOptionsBuilder<ApiShopContext>()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .Options;
+            return new ApiShopContext(options);
         }
 
         [Fact]
-        public async Task GetProducts_ShouldReturnEmptyList_WhenNoProductsExist()
+        public async Task GetProducts_ShouldReturnFilteredResults_AndCorrectTotalCount()
         {
-            // Arrange - רשימה ריקה
-            _mockContext.Setup(x => x.Products).ReturnsDbSet(new List<Product>());
+            // Arrange
+            var context = GetDbContext();
+            context.Products.AddRange(new List<Product>
+        {
+            new Product { Id = 1, Description = "Apple", Price = 10, CategoryId = 1 },
+            new Product { Id = 2, Description = "Banana", Price = 20, CategoryId = 1 },
+            new Product { Id = 3, Description = "Carrot", Price = 5, CategoryId = 2 }
+        });
+            await context.SaveChangesAsync();
+            var repository = new ProductRepository(context);
 
-            // Act
-            var result = await _repository.GetProducts();
+            // Act - Filter for price >= 10 and Category 1
+            var result = await repository.GetProducts(1, 10, new int?[] { 1 }, null, 10, null);
 
             // Assert
-            Assert.Empty(result);
+            Assert.Equal(2, result.TotalCount);
+            Assert.Equal(2, result.Items.Count);
+            Assert.All(result.Items, p => Assert.True(p.Price >= 10));
+        }
+
+        [Fact]
+        public async Task GetProducts_WhenNoMatch_ShouldReturnEmptyListAndZeroCount()
+        {
+            // Arrange
+            var context = GetDbContext(); // Empty DB
+            var repository = new ProductRepository(context);
+
+            // Act
+            var result = await repository.GetProducts(1, 10, Array.Empty<int?>(), "NonExistent", null, null);
+
+            // Assert
+            Assert.Empty(result.Items);
+            Assert.Equal(0, result.TotalCount);
         }
     }
 }

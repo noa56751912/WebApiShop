@@ -8,14 +8,15 @@ namespace DTOs
 {
     public record OrderDTO
   (
-        int OrderId,
+        int? OrderId,
 
 
         DateOnly OrderDate,
+        
 
+        double OrderSum,
 
-        int OrderSum,
-
-        int? UserId
+        int UserId,
+        ICollection<OrderItemDTO> OrderItems
         );
 }

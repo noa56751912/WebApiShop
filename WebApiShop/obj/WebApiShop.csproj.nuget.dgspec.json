@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj": {}
+    "E:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj": {}
   },
   "projects": {
-    "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj": {
+    "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj",
+        "projectUniqueName": "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj",
         "projectName": "DTOs",
-        "projectPath": "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj",
+        "projectPath": "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\obj\\",
+        "outputPath": "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -69,14 +69,14 @@
         }
       }
     },
-    "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
+    "E:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj",
+        "projectUniqueName": "E:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj",
         "projectName": "Entity",
-        "projectPath": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj",
+        "projectPath": "E:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\API\\WebApiShop\\Entity\\obj\\",
+        "outputPath": "E:\\studies\\API\\WebApiShop\\Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -140,14 +140,14 @@
         }
       }
     },
-    "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj": {
+    "E:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj",
+        "projectUniqueName": "E:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj",
+        "projectPath": "E:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\API\\WebApiShop\\Repository\\obj\\",
+        "outputPath": "E:\\studies\\API\\WebApiShop\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -168,11 +168,11 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj": {
-                "projectPath": "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj"
+              "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj": {
+                "projectPath": "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj"
               },
-              "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
-                "projectPath": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj"
+              "E:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
+                "projectPath": "E:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj"
               }
             }
           }
@@ -226,14 +226,14 @@
         }
       }
     },
-    "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj": {
+    "E:\\studies\\API\\WebApiShop\\Services\\Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj",
+        "projectUniqueName": "E:\\studies\\API\\WebApiShop\\Services\\Services.csproj",
         "projectName": "Services",
-        "projectPath": "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj",
+        "projectPath": "E:\\studies\\API\\WebApiShop\\Services\\Services.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\API\\WebApiShop\\Services\\obj\\",
+        "outputPath": "E:\\studies\\API\\WebApiShop\\Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -254,14 +254,14 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj": {
-                "projectPath": "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj"
+              "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj": {
+                "projectPath": "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj"
               },
-              "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
-                "projectPath": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj"
+              "E:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
+                "projectPath": "E:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj"
               },
-              "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj": {
-                "projectPath": "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj"
+              "E:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj": {
+                "projectPath": "E:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj"
               }
             }
           }
@@ -311,14 +311,14 @@
         }
       }
     },
-    "F:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj": {
+    "E:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
+        "projectUniqueName": "E:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
         "projectName": "WebApiShop",
-        "projectPath": "F:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
+        "projectPath": "E:\\studies\\API\\WebApiShop\\WebApiShop\\WebApiShop.csproj",
         "packagesPath": "C:\\Users\\נועה\\.nuget\\packages\\",
-        "outputPath": "F:\\studies\\API\\WebApiShop\\WebApiShop\\obj\\",
+        "outputPath": "E:\\studies\\API\\WebApiShop\\WebApiShop\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -339,17 +339,17 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj": {
-                "projectPath": "F:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj"
+              "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj": {
+                "projectPath": "E:\\studies\\API\\WebApiShop\\ClassLibrary1\\DTOs.csproj"
               },
-              "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
-                "projectPath": "F:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj"
+              "E:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj": {
+                "projectPath": "E:\\studies\\API\\WebApiShop\\Entity\\Entity.csproj"
               },
-              "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj": {
-                "projectPath": "F:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj"
+              "E:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj": {
+                "projectPath": "E:\\studies\\API\\WebApiShop\\Repository\\Repository.csproj"
               },
-              "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj": {
-                "projectPath": "F:\\studies\\API\\WebApiShop\\Services\\Services.csproj"
+              "E:\\studies\\API\\WebApiShop\\Services\\Services.csproj": {
+                "projectPath": "E:\\studies\\API\\WebApiShop\\Services\\Services.csproj"
               }
             }
           }

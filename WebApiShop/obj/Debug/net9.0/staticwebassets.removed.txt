@@ -1,5 +1,0 @@
-E:\studies\API\WebApiShop\WebApiShop\wwwroot\Page2.js
-E:\studies\API\WebApiShop\WebApiShop\wwwroot\home.html
-E:\studies\API\WebApiShop\WebApiShop\wwwroot\Page2.html
-E:\studies\API\WebApiShop\WebApiShop\wwwroot\page1.html
-E:\studies\API\WebApiShop\WebApiShop\wwwroot\page1.js
