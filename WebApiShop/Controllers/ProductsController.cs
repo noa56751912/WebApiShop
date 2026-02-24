@@ -1,10 +1,7 @@
-﻿
+﻿using DTOs;
 using Entity;
 using Microsoft.AspNetCore.Mvc;
 using Services;
-using DTOs;
-
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace WebApiShop.Controllers
 {
@@ -12,49 +9,20 @@ namespace WebApiShop.Controllers
     [ApiController]
     public class ProductsController : ControllerBase
     {
-        private readonly IProductsServices _IProductsServices;
+        private readonly IProductsServices _productsServices;
+
         public ProductsController(IProductsServices productsServices)
         {
-            _IProductsServices = productsServices;
+            _productsServices = productsServices;
         }
-        //private static  List<User> users = new List<User>();
 
-
-        
-        
         [HttpGet]
         public async Task<ActionResult<PageResponseDTO<ProductDTO>>> Get(int position, int skip, [FromQuery] int?[] categoryIds, string? description, int? maxPrice, int? minPrice)
         {
-
-            PageResponseDTO<ProductDTO> pageResponse = await _IProductsServices.GetProducts(position, skip, categoryIds, description, maxPrice, minPrice);
+            PageResponseDTO<ProductDTO> pageResponse = await _productsServices.GetProducts(position, skip, categoryIds, description, maxPrice, minPrice);
             if (pageResponse.Data.Count() > 0)
                 return Ok(pageResponse);
             return NoContent();
         }
-
-
-        //private static  List<User> users = new List<User>();
-
-
-        //[HttpGet]
-
-
-
-        //[HttpGet("{id}")]
-
-        //[HttpPost("Login")]
-
-
-        //[HttpPost]
-
-        //// PUT api/<Users>/5
-        //[HttpPut("{id}")]
-
-
-
-
-
-
-
     }
 }

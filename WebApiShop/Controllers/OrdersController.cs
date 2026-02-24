@@ -1,10 +1,8 @@
-﻿
+﻿using DTOs;
+using Entity;
 using Microsoft.AspNetCore.Mvc;
-using Entity; 
 using Services;
-using DTOs;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 namespace WebApiShop.Controllers
 {
     [Route("api/[controller]")]
@@ -12,6 +10,7 @@ namespace WebApiShop.Controllers
     public class OrdersController : ControllerBase
     {
         private readonly IOrdersServices _ordersServices;
+
         public OrdersController(IOrdersServices ordersServices)
         {
             _ordersServices = ordersServices;
@@ -35,9 +34,4 @@ namespace WebApiShop.Controllers
             return CreatedAtAction(nameof(Get), new { id = newOrder.OrderId }, newOrder);
         }
     }
-
-        // DELETE api/Users/5
-        
-
-        
-    }
+}

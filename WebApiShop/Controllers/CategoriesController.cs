@@ -1,5 +1,4 @@
-﻿
-using Entity;
+﻿using Entity;
 using Microsoft.AspNetCore.Mvc;
 using Repository;
 using Services;
@@ -10,10 +9,11 @@ namespace WebApiShop.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-        private readonly ICategoriesServices _ICategoriesServices;
+        private readonly ICategoriesServices _categoriesServices;
+
         public CategoriesController(ICategoriesServices categoriesServices)
         {
-            _ICategoriesServices = categoriesServices;
+            _categoriesServices = categoriesServices;
         }
     }
 }

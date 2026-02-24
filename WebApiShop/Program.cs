@@ -7,10 +7,7 @@ using WebApiShop.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserServices, UserServices>();
 builder.Services.AddScoped<IPasswordServices, PasswordServices>();
@@ -22,37 +19,26 @@ builder.Services.AddScoped<IOrdersRepository, OrdersRepository>();
 builder.Services.AddScoped<IOrdersServices, OrdersServices>();
 builder.Services.AddScoped<IRatingRepository, RatingRepository>();
 builder.Services.AddScoped<IRatingService, RatingService>();
-
-builder.Services.AddDbContext<ApiShopContext>(option=>option.UseSqlServer("Data Source=Noa;Initial Catalog=ApiShop;Integrated Security=True;Trust Server Certificate=True"));
-
+builder.Services.AddDbContext<ApiShopContext>(option => option.UseSqlServer("Data Source=Noa;Initial Catalog=ApiShop;Integrated Security=True;Trust Server Certificate=True"));
 builder.Services.AddOpenApi();
 builder.Host.UseNLog();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
 
 var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
-app.UseSwaggerUI(options =>
-{
-    options.SwaggerEndpoint("/openapi/v1.json", "My API V1");
-});
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/openapi/v1.json", "My API V1");
+    });
 }
 
-// Configure the HTTP request pipeline.
-
 app.UseHttpsRedirection();
-
 app.UseErrorHandling();
-
 app.UseRating();
-
 app.UseStaticFiles();
-
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

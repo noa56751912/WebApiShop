@@ -1,25 +1,26 @@
-﻿using Entity;
+﻿using DTOs;
+using Entity;
 using Microsoft.AspNetCore.Mvc;
 using Repository;
 using Services;
-using DTOs;
+
 namespace WebApiShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PasswordController:ControllerBase
+    public class PasswordController : ControllerBase
     {
-        private readonly IPasswordServices _IServicePassword;
-        PasswordServices passwordService= new PasswordServices();
-        public PasswordController(IPasswordServices IServicePassword)
-        {
-            _IServicePassword = IServicePassword;
-        }
-        [HttpPost("PasswordStrength")]
+        private readonly IPasswordServices _passwordService;
 
-        public ActionResult<UserDTO> PasswordStrength([FromBody] string password)
+        public PasswordController(IPasswordServices passwordService)
         {
-            int strength = passwordService.PasswordStrength(password);
+            _passwordService = passwordService;
+        }
+
+        [HttpPost("PasswordStrength")]
+        public ActionResult<int> PasswordStrength([FromBody] string password)
+        {
+            int strength = _passwordService.PasswordStrength(password);
             return Ok(strength);
         }
     }
