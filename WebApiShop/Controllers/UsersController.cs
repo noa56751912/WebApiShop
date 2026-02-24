@@ -1,32 +1,28 @@
-﻿
+﻿using DTOs;
+using Entity;
 using Microsoft.AspNetCore.Mvc;
-using Entity; 
 using Services;
-using DTOs;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 namespace WebApiShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class UserController : ControllerBase
     {
-        private readonly IUserServices _UserSrvice;
+        private readonly IUserServices _userService;
         private readonly ILogger<UserController> _logger;
-        public UserController(IUserServices IServiceUser, ILogger<UserController> logger) {
-            _UserSrvice = IServiceUser;
+
+        public UserController(IUserServices userService, ILogger<UserController> logger)
+        {
+            _userService = userService;
             _logger = logger;
         }
-        //ServiceUser services = new ServiceUser();
 
-        //private static List<User> users = new List<User>();
-
-       
         // GET api/Users/5
         [HttpGet("{id}")]
         public async Task<ActionResult<UserDTO>> GetUserById(int id)
         {
-            UserDTO? user =await _UserSrvice.GetUserById(id);
+            UserDTO user = await _userService.GetUserById(id);
             if (user == null)
             {
                 return NotFound();
@@ -38,7 +34,7 @@ namespace WebApiShop.Controllers
         [HttpPost("Login")]
         public async Task<ActionResult<UserDTO>> Login([FromBody] ExistingUserDTO existingUser)
         {
-            UserDTO user = await _UserSrvice.Login(existingUser);
+            UserDTO user = await _userService.Login(existingUser);
             if (user == null)
                 return Unauthorized("Invalid email or password");
 
@@ -46,13 +42,12 @@ namespace WebApiShop.Controllers
             return Ok(user);
         }
 
-        
         [HttpPost]
         public async Task<ActionResult<UserDTO>> Register([FromBody] UserDTO newUser)
         {
-            UserDTO? user =await _UserSrvice.Register(newUser);
+            UserDTO user = await _userService.Register(newUser);
             if (user == null)
-                return BadRequest("Password"); 
+                return BadRequest("Password too weak");
 
             return CreatedAtAction(nameof(GetUserById), new { id = newUser.UserId }, newUser);
         }
@@ -61,16 +56,10 @@ namespace WebApiShop.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, [FromBody] UserDTO updateUser)
         {
-           bool success= await _UserSrvice.Update(id, updateUser);
-            if(!success)
-                return BadRequest("Password");
-            return Ok();
-
+            bool success = await _userService.Update(id, updateUser);
+            if (!success)
+                return BadRequest("Password too weak");
+            return NoContent();
         }
-
-        // DELETE api/Users/5
-        
-
-        
     }
 }

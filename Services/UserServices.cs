@@ -3,6 +3,7 @@ using AutoMapper;
 using DTOs;
 using Entity;
 using Repository;
+
 namespace Services
 {
     public class UserServices : IUserServices
@@ -11,13 +12,13 @@ namespace Services
         private readonly IPasswordServices _passwordService;
         private readonly IMapper _mapper;
 
-        public UserServices(IUserRepository repository, IPasswordServices ServicePassword, IMapper mapper)
+        public UserServices(IUserRepository repository, IPasswordServices passwordService, IMapper mapper)
         {
             _repository = repository;
-            _passwordService = ServicePassword;
+            _passwordService = passwordService;
             _mapper = mapper;
         }
- 
+
         public async Task<UserDTO> GetUserById(int id)
         {
             return _mapper.Map<User, UserDTO>(await _repository.GetUserById(id));
@@ -27,6 +28,7 @@ namespace Services
         {
             return _mapper.Map<User, UserDTO>(await _repository.Login(existingUser.Email, existingUser.Password));
         }
+
         public async Task<UserDTO> Register(UserDTO user)
         {
             int passScore = _passwordService.PasswordStrength(user.Password);
@@ -34,9 +36,9 @@ namespace Services
                 return null;
 
             User userEntity = _mapper.Map<User>(user);
-
             return _mapper.Map<UserDTO>(await _repository.Register(userEntity));
         }
+
         public async Task<bool> Update(int id, UserDTO updateUser)
         {
             int passScore = _passwordService.PasswordStrength(updateUser.Password);
@@ -46,12 +48,10 @@ namespace Services
             await _repository.Update(id, user);
             return true;
         }
+
         public async Task<IEnumerable<UserDTO>> GetUsers()
         {
             return _mapper.Map<IEnumerable<User>, IEnumerable<UserDTO>>(await _repository.GetUsers());
-
         }
-
-
     }
 }
